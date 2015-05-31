@@ -1,4 +1,4 @@
-package com.fd;
+package com.fd.dnscache;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -9,6 +9,9 @@ import org.xbill.DNS.Lookup;
 import org.xbill.DNS.Record;
 import org.xbill.DNS.TextParseException;
 import org.xbill.DNS.Type;
+
+import com.fd.simplecache.Cache;
+import com.fd.simplecache.Element;
 
 /**
  * Dns cache supply get dns, cache dns
@@ -225,7 +228,6 @@ public class DnsCache {
 		if (host == null || host.isEmpty()) {
 			return null;
 		}
-		host = host.endsWith(".") ? host : host + ".";
 		try {
 			return InetAddress.getAllByName(host);
 		} catch (Exception ignore) {

@@ -1,4 +1,4 @@
-package com.fd;
+package com.fd.dnscache;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

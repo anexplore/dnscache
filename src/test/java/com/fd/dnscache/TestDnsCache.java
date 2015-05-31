@@ -1,6 +1,9 @@
-package com.fd;
+package com.fd.dnscache;
 
 import java.net.InetAddress;
+
+import com.fd.dnscache.DNS;
+import com.fd.dnscache.DnsCache;
 
 import junit.framework.TestCase;
 
