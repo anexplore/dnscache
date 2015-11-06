@@ -132,7 +132,7 @@ public class DnsCache {
 		if (ele == null) {
 			dns = getDns(host);
 			if (dns == null) {
-				cache.put(new Element(host, DNS.FAILED_DNS, 60000));
+				//cache.put(new Element(host, DNS.FAILED_DNS, 60000));
 			} else {
 				// put to cache
 				if (defaultTimeToLive >= 0) {
